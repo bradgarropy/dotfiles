@@ -1,0 +1,10 @@
+# editor
+.vscode
+
+# python
+*.pyc
+
+# distribution
+*.egg-info
+build
+dist
