@@ -10,7 +10,7 @@ alias rei=pip_reinstall
 #############
 
 # git add/commit/push
-git_add_commit_push () {
+git_add_commit_push() {
     set -x
 
     git add *
