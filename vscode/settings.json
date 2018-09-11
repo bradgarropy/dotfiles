@@ -1,0 +1,59 @@
+{
+    "editor.snippetSuggestions": "top",
+    "editor.renderWhitespace": "none",
+    "editor.formatOnSave": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/.vscode": true,
+        "**/*.egg-info": true,
+        "**/*.pyc": true,
+        "**/CVS": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    "javascript.format.enable": false,
+    "liveServer.settings.port": 3002,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "python.linting.maxNumberOfProblems": 250,
+    // "workbench.colorCustomizations": {
+    //     // base
+    //     "focusBorder": "#47A8BD",
+    //     "foreground": "#FFFFFF",
+    //     "widget.shadow": "#47A8BD",
+    //     "selection.background": "#47A8BD",
+    //     "descriptionForeground": "#AAAAAA",
+    //     "errorForeground": "#ff0000",
+    //     // text
+    //     "textBlockQuote.background": "#ff0000",
+    //     "textBlockQuote.border": "#ff0000",
+    //     "textCodeBlock.background": "#ff0000",
+    //     "textLink.activeForeground": "#FF9770",
+    //     "textLink.foreground": "#47A8BD",
+    //     "textPreformat.foreground": "#ff0000",
+    //     "textSeparator.foreground": "#ff0000",
+    //     // button
+    //     "button.background": "#47A8BD",
+    //     "button.foreground": "#FFFFFF"
+    // },
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+}
