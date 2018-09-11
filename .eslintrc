@@ -76,6 +76,10 @@
             "error",
             "last"
         ],
+        "space-before-function-paren": [
+            "error",
+            "never"
+        ],
         "quotes": [
             "error",
             "double"
