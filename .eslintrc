@@ -43,9 +43,7 @@
         ],
         "function-paren-newline": [
             "error",
-            {
-                "minItems": 2
-            }
+            "multiline"
         ],
         "indent": [
             "error",
