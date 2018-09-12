@@ -41,6 +41,12 @@
             "error",
             "always"
         ],
+        "function-paren-newline": [
+            "error",
+            {
+                "minItems": 2
+            }
+        ],
         "indent": [
             "error",
             4,
