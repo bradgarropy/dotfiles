@@ -4,10 +4,7 @@
         "node": true,
         "es6": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -15,14 +12,9 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
+    "plugins": ["react"],
     "rules": {
-        "comma-dangle": [
-            "error",
-            "always-multiline"
-        ],
+        "comma-dangle": ["error", "always-multiline"],
         "comma-spacing": [
             "error",
             {
@@ -30,22 +22,10 @@
                 "after": true
             }
         ],
-        "comma-style": [
-            "error",
-            "last"
-        ],
-        "eol-last": [
-            "error",
-            "always"
-        ],
-        "eqeqeq": [
-            "error",
-            "always"
-        ],
-        "function-paren-newline": [
-            "error",
-            "consistent"
-        ],
+        "comma-style": ["error", "last"],
+        "eol-last": ["error", "always"],
+        "eqeqeq": ["error", "always"],
+        "function-paren-newline": ["error", "consistent"],
         "indent": [
             "error",
             4,
@@ -53,19 +33,14 @@
                 "SwitchCase": 1
             }
         ],
-        "no-mixed-spaces-and-tabs": [
-            "error"
-        ],
+        "no-mixed-spaces-and-tabs": ["error"],
         "no-unused-vars": [
             "error",
             {
                 "ignoreRestSiblings": true
             }
         ],
-        "object-curly-spacing": [
-            "error",
-            "never"
-        ],
+        "object-curly-spacing": ["error", "never"],
         "object-curly-newline": [
             "error",
             {
@@ -78,10 +53,7 @@
                 "allowAllPropertiesOnSameLine": true
             }
         ],
-        "semi": [
-            "error",
-            "never"
-        ],
+        "semi": ["error", "never"],
         "semi-spacing": [
             "error",
             {
@@ -89,17 +61,9 @@
                 "after": true
             }
         ],
-        "semi-style": [
-            "error",
-            "last"
-        ],
-        "space-before-function-paren": [
-            "error",
-            "never"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ]
+        "semi-style": ["error", "last"],
+        "space-before-function-paren": ["error", "never"],
+        "quotes": ["error", "double"],
+        "react/jsx-tag-spacing": ["error", {"beforeSelfClosing": "never"}]
     }
 }
