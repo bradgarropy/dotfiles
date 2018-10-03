@@ -16,7 +16,6 @@
         "build": true,
         "dist": true,
         "node_modules": true,
-        "public": true,
         "*.egg-info": true,
         "**/*.pyc": true,
     },
