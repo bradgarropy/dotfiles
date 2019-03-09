@@ -23,8 +23,9 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    "prettier.requireConfig": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "prettier.eslintIntegration": true,
+    "prettier.requireConfig": true,
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
