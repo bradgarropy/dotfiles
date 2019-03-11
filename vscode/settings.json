@@ -16,9 +16,6 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
     "liveServer.settings.port": 3002,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
