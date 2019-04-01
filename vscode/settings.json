@@ -1,7 +1,7 @@
 {
     "editor.snippetSuggestions": "top",
     "editor.renderWhitespace": "none",
-    "editor.fontFamily": "Hasklig, Consolas, monospace",
+    "editor.fontFamily": "Dank Mono, Consolas, monospace",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "eslint.autoFixOnSave": true,
