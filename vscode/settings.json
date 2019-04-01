@@ -3,6 +3,7 @@
     "editor.renderWhitespace": "none",
     "editor.fontFamily": "Dank Mono, Consolas, monospace",
     "editor.fontLigatures": true,
+    "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "eslint.autoFixOnSave": true,
     "explorer.confirmDelete": false,
