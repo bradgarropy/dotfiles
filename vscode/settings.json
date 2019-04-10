@@ -3,8 +3,12 @@
     "editor.renderWhitespace": "none",
     "editor.fontFamily": "Dank Mono, Consolas, monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.formatOnSave": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
     "eslint.autoFixOnSave": true,
     "explorer.confirmDelete": false,
     "files.eol": "\n",
@@ -26,6 +30,7 @@
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "prettier.eslintIntegration": true,
     "prettier.requireConfig": true,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
