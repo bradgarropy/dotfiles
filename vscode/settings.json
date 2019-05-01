@@ -41,4 +41,6 @@
     "workbench.colorTheme": "One Dark Pro Vivid",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
 }
