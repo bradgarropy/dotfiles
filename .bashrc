@@ -4,6 +4,7 @@
 
 alias acp=git_add_commit_push
 alias rei=pip_reinstall
+alias remage=magento_restart
 
 #############
 # functions
@@ -26,6 +27,22 @@ pip_reinstall() {
 
     git pull
     sudo python setup.py install
+
+    set +x
+}
+
+# magento restart
+magento_restart() {
+    set -x
+
+    cd ~/projects/magento2ce
+    rm -rf var/di/* var/generation/* var/cache/* var/log/* var/page_cache/*
+    php bin/magento cache:clean
+    php bin/magento cache:flush
+    php bin/magento setup:upgrade
+    php bin/magento setup:di:compile
+    php bin/magento indexer:reindex
+    cd -
 
     set +x
 }
