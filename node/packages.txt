@@ -1,0 +1,4 @@
+gatsby-cli
+netlify-cli
+serve
+vsce
