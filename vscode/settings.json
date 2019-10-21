@@ -28,7 +28,6 @@
     "files.exclude": {
         ".cache": true,
         ".vscode": true,
-        "build": true,
         "node_modules": true,
         "*.egg-info": true,
         "**/*.pyc": true
@@ -38,7 +37,7 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "liveServer.settings.port": 3002,
     "terminal.integrated.fontSize": 15,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
     "php.validate.executablePath": "/usr/local/opt/valet-php@7.2/bin/php",
     "prettier.requireConfig": true,
     "terminal.integrated.cursorBlinking": false,
