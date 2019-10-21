@@ -5,8 +5,8 @@
     "editor.cursorWidth": 3,
     "editor.fontFamily": "Operator Mono Lig, Operator Mono, Dank Mono, Consolas, monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 17,
-    "editor.fontWeight": "500",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "400",
     "editor.formatOnSave": true,
     "editor.letterSpacing": 0.5,
     "editor.lineHeight": 25,
@@ -21,7 +21,7 @@
         "javascript",
         "javascriptreact",
         "typescript",
-        "typescriptreact"
+        "typescriptreact",
     ],
     "explorer.confirmDelete": false,
     "files.eol": "\n",
@@ -29,7 +29,6 @@
         ".cache": true,
         ".vscode": true,
         "build": true,
-        "dist": true,
         "node_modules": true,
         "*.egg-info": true,
         "**/*.pyc": true
@@ -41,7 +40,6 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "php.validate.executablePath": "/usr/local/opt/valet-php@7.2/bin/php",
-    "prettier.eslintIntegration": true,
     "prettier.requireConfig": true,
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.cursorStyle": "line",
@@ -49,9 +47,17 @@
     "workbench.colorTheme": "Cobalt2",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
-
     // languages
     "[markdown]": {
         "files.trimTrailingWhitespace": false
+    },
+    "typescript.format.enable": false,
+    "typescript.validate.enable": false,
+    "extensions.ignoreRecommendations": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 }
