@@ -1,4 +1,8 @@
+@aws-amplify/cli
+firebase-tools
 gatsby-cli
+lodash-cli
 netlify-cli
+now
 serve
 vsce
