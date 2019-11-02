@@ -4,5 +4,7 @@ gatsby-cli
 lodash-cli
 netlify-cli
 now
+npm
 serve
 vsce
+yarn
