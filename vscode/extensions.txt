@@ -21,4 +21,5 @@ Prisma.vscode-graphql
 ritwickdey.LiveServer
 sdras.night-owl
 wesbos.theme-cobalt2
+whizkydee.material-palenight-theme
 zhuangtongfa.Material-theme
