@@ -1,3 +1,4 @@
+ahmadawais.shades-of-purple
 akamud.vscode-theme-onedark
 azemoh.one-monokai
 bradgarropy.bg-snippets
@@ -14,8 +15,8 @@ mhartington.oceanic-next
 mikestead.dotenv
 mkaufman.HTMLHint
 ms-python.python
+ms-vsliveshare.vsliveshare
 PKief.material-icon-theme
-Prisma.prisma
 Prisma.vscode-graphql
 ritwickdey.LiveServer
 sdras.night-owl
