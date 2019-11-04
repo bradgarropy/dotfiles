@@ -6,6 +6,8 @@ alias acp=git_add_commit_push
 alias rei=pip_reinstall
 alias remage=magento_restart
 alias neto="netlify open"
+alias hubo="hub browse --"
+alias hubi="hub browse -- issues"
 
 #############
 # functions
