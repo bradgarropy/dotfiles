@@ -1,6 +1,7 @@
 {
     "settings": {
-        "key": "q05x-zjyh-3bbs-8w2g",
+        "bwtest": false,
+        "key": "g9hs-05xb-y3pv-bvwp",
         "server": "rtmp://a.rtmp.youtube.com/live2",
         "service": "YouTube / YouTube Gaming"
     },
