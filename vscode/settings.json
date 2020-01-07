@@ -53,7 +53,8 @@
     "workbench.startupEditor": "newUntitledFile",
     // languages
     "[markdown]": {
-        "files.trimTrailingWhitespace": false
+        "files.trimTrailingWhitespace": false,
+        "editor.wordWrap": "on",
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
