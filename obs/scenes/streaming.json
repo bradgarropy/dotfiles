@@ -35,12 +35,14 @@
     "quick_transitions": [
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 1,
             "name": "Cut"
         },
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
             "id": 2,
             "name": "Fade"
@@ -71,94 +73,82 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "flags": 0,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "compressor_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Compressor",
+                    "prev_ver": 419430401,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {},
+                    "sync": 0,
+                    "versioned_id": "compressor_filter",
+                    "volume": 1.0
+                },
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "noise_gate_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Noise Gate",
+                    "prev_ver": 419430401,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "close_threshold": -45.0,
+                        "open_threshold": -40.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "noise_gate_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 2,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Shure SM58": [],
-                "libobs.hide_scene_item.Sony a6000": [],
-                "libobs.show_scene_item.Shure SM58": [],
-                "libobs.show_scene_item.Sony a6000": []
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "scene",
-            "mixers": 0,
+            "id": "wasapi_input_capture",
+            "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene - Camera",
-            "prev_ver": 402653187,
+            "name": "Shure SM58",
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "custom_size": false,
-                "id_counter": 7,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": false,
-                        "name": "Sony a6000",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {
-                            "color": "",
-                            "color-preset": 0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.3333333730697632,
-                            "y": 1.3333333730697632
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": false,
-                        "name": "Shure SM58",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "device_id": "{0.0.1.00000000}.{7509143e-ac07-4acc-8bac-0bbb54fc07a0}",
+                "use_device_timing": false
             },
             "sync": 0,
-            "volume": 1.0
+            "versioned_id": "wasapi_input_capture",
+            "volume": 1.3963683843612671
         },
         {
             "balance": 0.5,
@@ -167,88 +157,29 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Desktop": [],
-                "libobs.hide_scene_item.Shure SM58": [],
-                "libobs.show_scene_item.Desktop": [],
-                "libobs.show_scene_item.Shure SM58": []
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "scene",
-            "mixers": 0,
+            "id": "dshow_input",
+            "mixers": 255,
             "monitoring_type": 0,
-            "muted": false,
-            "name": "Scene - Desktop",
-            "prev_ver": 402653187,
+            "muted": true,
+            "name": "Sony a6000",
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "custom_size": false,
-                "id_counter": 2,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Desktop",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "Shure SM58",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "last_video_device_id": "Cam Link 4K:\\\\?\\usb#22vid_0fd9&pid_0066&mi_00#226&303ac814&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "res_type": 0,
+                "video_device_id": "Cam Link 4K:\\\\?\\usb#22vid_0fd9&pid_0066&mi_00#226&303ac814&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
             },
             "sync": 0,
+            "versioned_id": "dshow_input",
             "volume": 1.0
         },
         {
@@ -258,82 +189,20 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "monitor_capture",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Overlay",
-            "prev_ver": 402653187,
+            "name": "Desktop",
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/bg.png",
-                "unload": false
-            },
+            "settings": {},
             "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Overlay": [],
-                "libobs.show_scene_item.Overlay": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Scene - BRB",
-            "prev_ver": 402653187,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 1,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Overlay",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
+            "versioned_id": "monitor_capture",
             "volume": 1.0
         },
         {
@@ -356,7 +225,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Scene - PIP",
-            "prev_ver": 402653187,
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -456,6 +325,68 @@
                 ]
             },
             "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Overlay": [],
+                "libobs.show_scene_item.Overlay": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Scene - BRB",
+            "prev_ver": 419430401,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Overlay",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -465,19 +396,23 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "monitor_capture",
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Desktop",
-            "prev_ver": 402653187,
+            "name": "Overlay",
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {},
+            "settings": {
+                "file": "D:/pictures/bg.png",
+                "unload": false
+            },
             "sync": 0,
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -487,28 +422,89 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Desktop": [],
+                "libobs.hide_scene_item.Shure SM58": [],
+                "libobs.show_scene_item.Desktop": [],
+                "libobs.show_scene_item.Shure SM58": []
             },
-            "id": "dshow_input",
-            "mixers": 255,
+            "id": "scene",
+            "mixers": 0,
             "monitoring_type": 0,
-            "muted": true,
-            "name": "Sony a6000",
-            "prev_ver": 402653187,
+            "muted": false,
+            "name": "Scene - Desktop",
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "last_video_device_id": "Cam Link 4K:\\\\?\\usb#22vid_0fd9&pid_0066&mi_00#226&303ac814&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "res_type": 0,
-                "video_device_id": "Cam Link 4K:\\\\?\\usb#22vid_0fd9&pid_0066&mi_00#226&303ac814&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+                "custom_size": false,
+                "id_counter": 2,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Desktop",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Shure SM58",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -516,79 +512,95 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "compressor_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Compressor",
-                    "prev_ver": 402653187,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {},
-                    "sync": 0,
-                    "volume": 1.0
-                },
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "noise_gate_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Noise Gate",
-                    "prev_ver": 402653187,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "close_threshold": -45.0,
-                        "open_threshold": -40.0
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 2,
+            "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Shure SM58": [],
+                "libobs.hide_scene_item.Sony a6000": [],
+                "libobs.show_scene_item.Shure SM58": [],
+                "libobs.show_scene_item.Sony a6000": []
             },
-            "id": "wasapi_input_capture",
-            "mixers": 255,
+            "id": "scene",
+            "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Shure SM58",
-            "prev_ver": 402653187,
+            "name": "Scene - Camera",
+            "prev_ver": 419430401,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "device_id": "{0.0.1.00000000}.{7509143e-ac07-4acc-8bac-0bbb54fc07a0}",
-                "use_device_timing": false
+                "custom_size": false,
+                "id_counter": 7,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": false,
+                        "name": "Sony a6000",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {
+                            "color": "",
+                            "color-preset": 0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.3333333730697632,
+                            "y": 1.3333333730697632
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 7,
+                        "locked": false,
+                        "name": "Shure SM58",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
-            "volume": 1.3963683843612671
+            "versioned_id": "scene",
+            "volume": 1.0
         }
     ],
     "transition_duration": 500,
