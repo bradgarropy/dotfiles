@@ -13,6 +13,7 @@
         "email": "bradgarropy@gmail.com",
         "url": "https://bradgarropy.com"
     },
+    "main": "<path>",
     "bin": {
         "<name>": "<path>"
     },
