@@ -5,20 +5,34 @@
 alias acp=git_add_commit_push
 alias rei=pip_reinstall
 alias remage=magento_restart
-alias neto="netlify open"
-alias netd="netlify dev"
-alias hubo="hub browse --"
-alias hubi="hub browse -- issues"
+alias ntlo="netlify open"
+alias ntld="netlify dev"
+alias gho="gh repo view -w"
+alias ghr=github_new_repo
 
 #############
 # functions
 #############
 
+# new github repo
+github_new_repo() {
+    set -x
+
+    gh repo create $1 --public
+    cd $1
+    labman bradgarropy/labels bradgarropy/$1 --clobber
+    gh repo view -w
+    code -r .
+
+    set +x
+}
+
+
 # git add/commit/push
 git_add_commit_push() {
     set -x
 
-    git add *
+    git add .
     git commit -m "$*"
     git push
 
