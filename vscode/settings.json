@@ -1,11 +1,12 @@
 {
     "breadcrumbs.enabled": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
+        "source.fixAll": true
     },
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
     "editor.cursorWidth": 3,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "Cascadia Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
@@ -13,10 +14,12 @@
     "editor.formatOnSave": true,
     "editor.letterSpacing": 0.5,
     "editor.lineHeight": 25,
+    "editor.renameOnType": true,
     "editor.renderWhitespace": "none",
     "editor.snippetSuggestions": "top",
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
     },
     "emmet.triggerExpansionOnTab": true,
     "eslint.validate": [
@@ -24,6 +27,7 @@
         "javascriptreact",
         "typescript",
         "typescriptreact",
+        "svelte"
     ],
     "explorer.confirmDelete": false,
     "extensions.ignoreRecommendations": false,
@@ -39,27 +43,26 @@
     "files.trimTrailingWhitespace": true,
     "git.path": "D:\\Git\\bin\\git.exe",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "liveServer.settings.port": 3002,
+    "javascript.preferences.useAliasesForRenames": false,
     "prettier.requireConfig": true,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.cursorStyle": "line",
-    "typescript.format.enable": false,
-    "typescript.validate.enable": false,
+    "togglequotes.chars": ["\"", "'", "`"],
+    "typescript.format.enable": true,
+    "typescript.validate.enable": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Cobalt2",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     // languages
+    "[handlebars]": {
+        "editor.formatOnSave": false
+    },
     "[markdown]": {
         "files.trimTrailingWhitespace": false,
-        "editor.wordWrap": "on",
+        "editor.wordWrap": "on"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "diffEditor.ignoreTrimWhitespace": false
 }

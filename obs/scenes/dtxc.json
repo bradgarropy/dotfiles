@@ -562,7 +562,7 @@
                         "crop_top": 780,
                         "group_item_backup": false,
                         "id": 17,
-                        "locked": true,
+                        "locked": false,
                         "name": "Spotify",
                         "pos": {
                             "x": 2060.0,
@@ -742,7 +742,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 2,
-                        "locked": false,
+                        "locked": true,
                         "name": "Sony WH-1000XM3",
                         "pos": {
                             "x": 0.0,
