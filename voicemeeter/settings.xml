@@ -25,8 +25,8 @@
 	<LabelVirtualStrip1>desktop</LabelVirtualStrip1>
 	<LabelVirtualStrip2>unused</LabelVirtualStrip2>
 	<LabelVirtualStrip3>unused</LabelVirtualStrip3>
-	<K7BUSRoute busa='0' busa2='0' busa3='0'  busa4='0'  busa5='0' busb='0' busb2='0' busb3='0' dblevel='0.00' />
-	<Strip index='1' mute='0' solo='0' mono='1' muc='0' busa='0' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<K7BUSRoute busa='1' busa2='0' busa3='0'  busa4='0'  busa5='0' busb='0' busb2='0' busb3='0' dblevel='0.00' />
+	<Strip index='1' mute='0' solo='0' mono='1' muc='0' busa='0' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='1' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='1' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
 	<Strip index='2' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
@@ -41,7 +41,7 @@
 	<Strip index='5' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='5' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='5' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
-	<Strip index='6' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<Strip index='6' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='6' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='6' EQGain1='0.00' EQGain2='0.00' EQGain3='0.00' 3DPanelx='0.000' 3DPanely='0.000' />
 	<Strip index='7' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
@@ -68,7 +68,7 @@
 	<Bus  index='8' retR='0.00' retD='0.00' retFx1='0.00' retFx2='0.00' />
 	<FXSection  freverb='0' fdelay='0' >
 <VoiceMeeterReverb>
-	<ReverbGeneral mute='0' nuPreset='10' presetName='Vocal med' dry='0.000000' wet='1.000000' />	<ReverbParam predelay='0.020000' decay='1.000000' EarlyRefAmount='0.000000' EQmute='0' />	<ReverbEQ index='1' eqon='1' eqf='50.000000' eqq='2.000000' eqg='0.000000' />	<ReverbEQ index='2' eqon='1' eqf='500.000000' eqq='2.000000' eqg='0.000000' />	<ReverbEQ index='3' eqon='1' eqf='10000.000000' eqq='2.000000' eqg='0.000000' /></VoiceMeeterReverb>
+	<ReverbGeneral mute='0' nuPreset='10' presetName='' dry='0.000000' wet='1.000000' />	<ReverbParam predelay='0.020000' decay='1.000000' EarlyRefAmount='0.000000' EQmute='0' />	<ReverbEQ index='1' eqon='1' eqf='50.000000' eqq='2.000000' eqg='0.000000' />	<ReverbEQ index='2' eqon='1' eqf='500.000000' eqq='2.000000' eqg='0.000000' />	<ReverbEQ index='3' eqon='1' eqf='10000.000000' eqq='2.000000' eqg='0.000000' /></VoiceMeeterReverb>
 <VoiceMeeterDelay>
 	<MultiTapGeneral mute='0' balance_left='-100.000000' balance_right='100.000000' dry='0.000000' wet='1.000000' autofit='0' phase='0' />	<MultiTapDelay predelay='0' timeratio='0.000000' currentBPM='0.000000' feedback='0.000000' feedbacktype='0' />	<MultiTapParam index='1' tapon='1' delay='0.500000' gain='100.000000' filtergain='10.000000' pan='0.000000' />	<MultiTapParam index='2' tapon='0' delay='1.000000' gain='95.000000' filtergain='15.000000' pan='0.000000' />	<MultiTapParam index='3' tapon='0' delay='1.500000' gain='90.000000' filtergain='20.000000' pan='0.000000' />	<MultiTapParam index='4' tapon='0' delay='2.000000' gain='85.000000' filtergain='25.000000' pan='0.000000' />	<MultiTapParam index='5' tapon='0' delay='2.500000' gain='80.000000' filtergain='30.000000' pan='0.000000' />	<MultiTapParam index='6' tapon='0' delay='3.000000' gain='75.000000' filtergain='35.000000' pan='0.000000' />	<MultiTapParam index='7' tapon='0' delay='3.500000' gain='70.000000' filtergain='40.000000' pan='0.000000' />	<MultiTapParam index='8' tapon='0' delay='4.000000' gain='65.000000' filtergain='45.000000' pan='0.000000' /></VoiceMeeterDelay>
 	</FXSection>

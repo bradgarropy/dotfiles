@@ -1,7 +1,7 @@
 {
     "breadcrumbs.enabled": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": true,
     },
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
@@ -49,20 +49,24 @@
     "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.cursorStyle": "line",
-    "togglequotes.chars": ["\"", "'", "`"],
+    "togglequotes.chars": [
+        "\"",
+        "'",
+        "`"
+    ],
     "typescript.format.enable": true,
     "typescript.validate.enable": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     // languages
     "[handlebars]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
     },
     "[markdown]": {
         "files.trimTrailingWhitespace": false,
-        "editor.wordWrap": "on"
+        "editor.wordWrap": "on",
     },
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
 }

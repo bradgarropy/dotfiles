@@ -1,0 +1,12 @@
+[
+    "eslint",
+    "gatsby-cli",
+    "labman",
+    "netlify-cli",
+    "nodemon",
+    "npm",
+    "rome",
+    "serve",
+    "vsce",
+    "yarn"
+]
