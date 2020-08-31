@@ -20,6 +20,7 @@
     "mikestead.dotenv",
     "minamarkham.yonce-theme",
     "morgan-codes.morgan-codes-vscode-theme",
+    "ms-vscode-remote.remote-wsl",
     "ms-vsliveshare.vsliveshare",
     "PKief.material-icon-theme",
     "Prisma.vscode-graphql",

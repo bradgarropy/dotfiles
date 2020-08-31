@@ -1,5 +1,6 @@
 {
     "breadcrumbs.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
     },
@@ -47,6 +48,7 @@
     "prettier.requireConfig": true,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.cursorStyle": "line",
     "togglequotes.chars": [
@@ -56,9 +58,10 @@
     ],
     "typescript.format.enable": true,
     "typescript.validate.enable": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
     // languages
     "[handlebars]": {
@@ -68,5 +71,4 @@
         "files.trimTrailingWhitespace": false,
         "editor.wordWrap": "on",
     },
-    "diffEditor.ignoreTrimWhitespace": false,
 }
