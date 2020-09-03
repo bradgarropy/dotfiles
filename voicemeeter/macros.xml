@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VBAudioVoicemeeterMacroButtonMap>
-<MacroButtonConfiguration x0='2141' y0='514' dx='634' dy='318' />
+<MacroButtonConfiguration x0='2141' y0='197' dx='634' dy='318' />
 	<MacroButton index='1' type='0' color='0' key='37' ctrl='1' shift='0' alt='0' anyway='0' exclusive='0' trigger='0' xinput='0'>
 		<MB_MIDI b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' />
 		<MB_TRIGGER tchannel='0' tin='0.0' tout='0.0' tmsHold='100' tafterMute='0' />
@@ -19,7 +19,7 @@ strip[7].A1=1
 
 strip[0].B1=0
 strip[1].B1=0
-strip[2].B1=0
+strip[2].B1=1
 strip[3].B1=1
 strip[4].B1=0
 strip[5].B1=0
@@ -113,6 +113,7 @@ strip[5].B1=1
 strip[6].B1=0
 strip[7].B1=0
 
+strip[2].fadeTo=(0, 1000ms)
 strip[3].fadeTo=(0, 1000ms)
 strip[5].fadeTo=(0, 1000ms)</MB_OnRequest>
 		<MB_OffRequest></MB_OffRequest>
@@ -177,14 +178,34 @@ strip[5].fadeTo=(0, 1000ms)</MB_OnRequest>
 		<MB_OnRequest></MB_OnRequest>
 		<MB_OffRequest></MB_OffRequest>
 	</MacroButton>
-	<MacroButton index='11' type='0' color='0' key='0' ctrl='0' shift='0' alt='0' anyway='0' exclusive='0' trigger='0' xinput='0'>
+	<MacroButton index='11' type='0' color='0' key='41' ctrl='1' shift='0' alt='0' anyway='0' exclusive='0' trigger='0' xinput='0'>
 		<MB_MIDI b1='00' b2='00' b3='00' b4='00' b5='00' b6='00' />
 		<MB_TRIGGER tchannel='0' tin='0.0' tout='0.0' tmsHold='100' tafterMute='0' />
 		<MB_XINPUT nctrl='0' nbutton='0' />
-		<MB_Name></MB_Name>
+		<MB_Name>dtxc</MB_Name>
 		<MB_Subname></MB_Subname>
 		<MB_InitRequest></MB_InitRequest>
-		<MB_OnRequest></MB_OnRequest>
+		<MB_OnRequest>strip[0].A1=0
+strip[1].A1=1
+strip[2].A1=1
+strip[3].A1=1
+strip[4].A1=1
+strip[5].A1=1
+strip[6].A1=1
+strip[7].A1=1
+
+strip[0].B1=1
+strip[1].B1=0
+strip[2].B1=1
+strip[3].B1=1
+strip[4].B1=0
+strip[5].B1=1
+strip[6].B1=0
+strip[7].B1=0
+
+strip[2].fadeTo=(-30, 1000ms)
+strip[3].fadeTo=(-30, 1000ms)
+strip[5].fadeTo=(-30, 1000ms)</MB_OnRequest>
 		<MB_OffRequest></MB_OffRequest>
 	</MacroButton>
 	<MacroButton index='12' type='0' color='0' key='0' ctrl='0' shift='0' alt='0' anyway='0' exclusive='0' trigger='0' xinput='0'>

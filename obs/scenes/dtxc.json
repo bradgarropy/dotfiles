@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "Scene - BRB",
-    "current_scene": "Scene - BRB",
+    "current_program_scene": "scene - brb",
+    "current_scene": "scene - brb",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -55,16 +55,19 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "Scene - PIP"
+            "name": "scene - brb"
         },
         {
-            "name": "Scene - Camera"
+            "name": "scene - pip"
         },
         {
-            "name": "Scene - Desktop"
+            "name": "scene - camera"
         },
         {
-            "name": "Scene - BRB"
+            "name": "scene - desktop"
+        },
+        {
+            "name": "component - audio"
         }
     ],
     "sources": [
@@ -73,7 +76,7 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "flags": 2,
+            "flags": 0,
             "hotkeys": {
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
@@ -84,7 +87,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Shure SM58",
+            "name": "source - voicemeeter",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -92,8 +95,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "device_id": "{0.0.1.00000000}.{7509143e-ac07-4acc-8bac-0bbb54fc07a0}",
-                "use_device_timing": false
+                "device_id": "{0.0.1.00000000}.{5e425c32-698f-4354-9730-b949e306d63d}"
             },
             "sync": 0,
             "versioned_id": "wasapi_input_capture",
@@ -107,16 +109,14 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Overlay": [],
-                "libobs.hide_scene_item.Sony WH-1000XM3": [],
-                "libobs.show_scene_item.Overlay": [],
-                "libobs.show_scene_item.Sony WH-1000XM3": []
+                "libobs.hide_scene_item.source - voicemeeter": [],
+                "libobs.show_scene_item.source - voicemeeter": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene - BRB",
+            "name": "component - audio",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -125,7 +125,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 2,
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
@@ -141,8 +141,71 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 1,
+                        "locked": false,
+                        "name": "source - voicemeeter",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.overlay": [],
+                "libobs.show_scene_item.component - audio": [],
+                "libobs.show_scene_item.overlay": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "scene - brb",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
                         "locked": true,
-                        "name": "Overlay",
+                        "name": "component - audio",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -169,9 +232,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 1,
                         "locked": true,
-                        "name": "Sony WH-1000XM3",
+                        "name": "overlay",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -202,7 +265,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Overlay",
+            "name": "overlay",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -229,43 +292,15 @@
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
             },
-            "id": "wasapi_output_capture",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Sony WH-1000XM3",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "{0.0.0.00000000}.{66bd13ef-3497-4cf7-99a6-e405e9ab7aec}"
-            },
-            "sync": 0,
-            "versioned_id": "wasapi_output_capture",
-            "volume": 0.056234132498502731
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
             "id": "dshow_input",
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Sony a6000",
+            "name": "sony a6000",
             "prev_ver": 419430408,
-            "private_settings": {},
+            "private_settings": {
+                "mixer_hidden": true
+            },
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -287,20 +322,18 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Shure SM58": [],
-                "libobs.hide_scene_item.Sony WH-1000XM3": [],
-                "libobs.hide_scene_item.Sony a6000": [],
-                "libobs.hide_scene_item.Spotify": [],
-                "libobs.show_scene_item.Shure SM58": [],
-                "libobs.show_scene_item.Sony WH-1000XM3": [],
-                "libobs.show_scene_item.Sony a6000": [],
-                "libobs.show_scene_item.Spotify": []
+                "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.sony a6000": [],
+                "libobs.hide_scene_item.spotify": [],
+                "libobs.show_scene_item.component - audio": [],
+                "libobs.show_scene_item.sony a6000": [],
+                "libobs.show_scene_item.spotify": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene - PIP",
+            "name": "scene - pip",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -309,8 +342,37 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 18,
+                "id_counter": 19,
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 19,
+                        "locked": true,
+                        "name": "component - audio",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -326,7 +388,7 @@
                         "group_item_backup": false,
                         "id": 9,
                         "locked": true,
-                        "name": "Sony a6000",
+                        "name": "sony a6000",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -336,64 +398,6 @@
                         "scale": {
                             "x": 1.3333333730697632,
                             "y": 1.3333333730697632
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 10,
-                        "locked": true,
-                        "name": "Shure SM58",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 11,
-                        "locked": true,
-                        "name": "Sony WH-1000XM3",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -412,8 +416,8 @@
                         "crop_top": 780,
                         "group_item_backup": false,
                         "id": 17,
-                        "locked": false,
-                        "name": "Spotify",
+                        "locked": true,
+                        "name": "spotify",
                         "pos": {
                             "x": 2060.0,
                             "y": 825.611572265625
@@ -441,18 +445,16 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Shure SM58": [],
-                "libobs.hide_scene_item.Sony WH-1000XM3": [],
-                "libobs.hide_scene_item.Sony a6000": [],
-                "libobs.show_scene_item.Shure SM58": [],
-                "libobs.show_scene_item.Sony WH-1000XM3": [],
-                "libobs.show_scene_item.Sony a6000": []
+                "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.sony a6000": [],
+                "libobs.show_scene_item.component - audio": [],
+                "libobs.show_scene_item.sony a6000": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene - Camera",
+            "name": "scene - camera",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -461,8 +463,37 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 9,
+                "id_counter": 10,
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 10,
+                        "locked": true,
+                        "name": "component - audio",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -478,7 +509,7 @@
                         "group_item_backup": false,
                         "id": 6,
                         "locked": true,
-                        "name": "Sony a6000",
+                        "name": "sony a6000",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -491,64 +522,6 @@
                         "scale": {
                             "x": 1.3333333730697632,
                             "y": 1.3333333730697632
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": true,
-                        "name": "Shure SM58",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
-                        "locked": true,
-                        "name": "Sony WH-1000XM3",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -570,7 +543,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Spotify",
+            "name": "spotify",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -594,22 +567,16 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Desktop": [],
-                "libobs.hide_scene_item.Shure SM58": [],
-                "libobs.hide_scene_item.Sony WH-1000XM3": [],
-                "libobs.hide_scene_item.Sony a6000": [],
-                "libobs.hide_scene_item.Spotify": [],
-                "libobs.show_scene_item.Desktop": [],
-                "libobs.show_scene_item.Shure SM58": [],
-                "libobs.show_scene_item.Sony WH-1000XM3": [],
-                "libobs.show_scene_item.Sony a6000": [],
-                "libobs.show_scene_item.Spotify": []
+                "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.desktop": [],
+                "libobs.show_scene_item.component - audio": [],
+                "libobs.show_scene_item.desktop": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene - Desktop",
+            "name": "scene - desktop",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -618,7 +585,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 8,
                 "items": [
                     {
                         "align": 5,
@@ -633,38 +600,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 8,
                         "locked": true,
-                        "name": "Shure SM58",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Sony WH-1000XM3",
+                        "name": "component - audio",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -693,7 +631,7 @@
                         "group_item_backup": false,
                         "id": 1,
                         "locked": true,
-                        "name": "Desktop",
+                        "name": "desktop",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -706,64 +644,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Sony a6000",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 1080.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.3333333432674408,
-                            "y": 0.3333333432674408
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 2060,
-                        "crop_top": 780,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "Spotify",
-                        "pos": {
-                            "x": 2060.0,
-                            "y": 830.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
                     }
                 ]
             },
@@ -782,7 +662,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Desktop",
+            "name": "desktop",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,

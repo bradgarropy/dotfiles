@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "scene - talking",
-    "current_scene": "scene - talking",
+    "current_program_scene": "component - audio",
+    "current_scene": "component - audio",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
