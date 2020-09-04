@@ -6,9 +6,6 @@
     "netlify-cli",
     "nodemon",
     "npm",
-    "rome",
     "serve",
-    "vsce",
-    "webpack-bundle-analyzer",
-    "yarn"
+    "vsce"
 ]

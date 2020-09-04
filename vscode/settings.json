@@ -58,7 +58,7 @@
     ],
     "typescript.format.enable": true,
     "typescript.validate.enable": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
