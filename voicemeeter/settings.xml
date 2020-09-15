@@ -5,9 +5,9 @@
 	<ExternalFXsend send1ch1='0' send1ch2='0' send2ch1='0' send2ch2='0' />
 	<ExternalFXreturn ret1ch1='0' ret1ch2='0' ret2ch1='0' ret2ch2='0' />
 	<InputDev index='1' type='4' name="Focusrite USB (Focusrite USB Audio)" />
-	<InputDev index='2' type='4' name="CABLE-A Output (VB-Audio Cable A)" />
-	<InputDev index='3' type='4' name="CABLE-B Output (VB-Audio Cable B)" />
-	<InputDev index='4' type='4' name="CABLE-C Output (VB-Audio Cable C)" />
+	<InputDev index='2' type='8' name="VB-Audio CABLE-A" />
+	<InputDev index='3' type='8' name="VB-Audio CABLE-B" />
+	<InputDev index='4' type='8' name="VB-Audio CABLE-C" />
 	<InputDev index='5' name="-" />
 	<OutputDev index='1' type='4' name="Headphones (LE_WH-1000XM3 Stereo)" />
 	<OutputDev index='2' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
@@ -26,31 +26,31 @@
 	<LabelVirtualStrip2>unused</LabelVirtualStrip2>
 	<LabelVirtualStrip3>unused</LabelVirtualStrip3>
 	<K7BUSRoute busa='1' busa2='0' busa3='0'  busa4='0'  busa5='0' busb='0' busb2='0' busb3='0' dblevel='0.00' />
-	<Strip index='1' mute='0' solo='0' mono='1' muc='0' busa='0' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<Strip index='1' mute='0' solo='0' mono='1' muc='0' busa='0' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='1' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='1' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='1' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
 	<Strip index='2' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='2' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='2' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
-	<Strip index='3' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='-12.00' dblimit='12.00' layer1='-12.00' layer2='-12.00' layer3='-12.00' layer4='-12.00' layer5='-12.00' layer6='-12.00' layer7='-12.00' layer8='-12.00' />
+	<Strip index='3' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='3' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='3' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
-	<Strip index='4' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='-12.00' dblimit='12.00' layer1='-12.00' layer2='-12.00' layer3='-12.00' layer4='-12.00' layer5='-12.00' layer6='-12.00' layer7='-12.00' layer8='-12.00' />
+	<Strip index='4' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='-30.00' dblimit='12.00' layer1='-30.00' layer2='-30.00' layer3='-30.00' layer4='-30.00' layer5='-30.00' layer6='-30.00' layer7='-30.00' layer8='-30.00' />
 	<Strip index='4' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='4' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
 	<Strip index='5' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='5' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='5' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
-	<Strip index='6' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='-12.39' dblimit='12.00' layer1='-12.39' layer2='-12.39' layer3='-12.39' layer4='-12.39' layer5='-12.39' layer6='-12.39' layer7='-12.39' layer8='-12.39' />
+	<Strip index='6' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='6' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='6' EQGain1='0.00' EQGain2='0.00' EQGain3='0.00' 3DPanelx='0.000' 3DPanely='0.000' />
-	<Strip index='7' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<Strip index='7' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='1' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='7' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='7' EQGain1='0.00' EQGain2='0.00' EQGain3='0.00' 3DPanelx='0.000' 3DPanely='0.000' />
 	<Strip index='8' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='8' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='8' EQGain1='0.00' EQGain2='0.00' EQGain3='0.00' 3DPanelx='0.000' 3DPanely='0.000' />
-	<Bus index='1' mute='0' mono='0' cross='0' BusMode='0' EQon='0' dblevel='0.00' />
+	<Bus index='1' mute='0' mono='1' cross='0' BusMode='0' EQon='0' dblevel='0.00' />
 	<Bus  index='1' retR='0.00' retD='0.00' retFx1='0.00' retFx2='0.00' />
 	<Bus index='2' mute='0' mono='0' cross='0' BusMode='0' EQon='0' dblevel='0.00' />
 	<Bus  index='2' retR='0.00' retD='0.00' retFx1='0.00' retFx2='0.00' />
@@ -472,7 +472,7 @@
 <VoiceMeeterRecorder>
 	<RecordMode RecBus='0' DontPlay='0' Loop='0' MultiTrack='0' TimerStop='0' />
 	<RecordArm ArmIn1='1' ArmIn2='1' ArmIn3='1' ArmIn4='1' ArmIn5='1' ArmIn6='1' ArmIn7='1' ArmIn8='1' ArmBus1='1' ArmBus2='0' ArmBus3='0' ArmBus4='0' ArmBus5='0' ArmBus6='0' ArmBus7='0' ArmBus8='0' />
-	<RecordDirectory>C:\Users\bradg\Documents\Voicemeeter</RecordDirectory>
+	<RecordDirectory>C:\Users\bradg\Desktop</RecordDirectory>
 	<RecordPrefix></RecordPrefix>
 	<RecordParam FileType='3' BitRes='16' TargetSR='0' nbChannel='2' kbps='192' />
 </VoiceMeeterRecorder>
