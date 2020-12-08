@@ -8,6 +8,7 @@ alias remage=magento_restart
 alias ntlo="netlify open"
 alias ntld="netlify dev"
 alias gho="gh repo view -w"
+alias ghpr="gh pr create -w"
 alias ghr=github_new_repo
 
 #############
