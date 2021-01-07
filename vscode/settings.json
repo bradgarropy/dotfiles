@@ -2,7 +2,7 @@
     "breadcrumbs.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
+        "source.fixAll": true
     },
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
@@ -48,7 +48,6 @@
     "prettier.requireConfig": true,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
-    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "terminal.integrated.cursorBlinking": false,
     "terminal.integrated.cursorStyle": "line",
     "togglequotes.chars": [
@@ -58,17 +57,22 @@
     ],
     "typescript.format.enable": true,
     "typescript.validate.enable": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
-    // languages
+    "editor.quickSuggestions": true,
     "[handlebars]": {
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": false
     },
     "[markdown]": {
         "files.trimTrailingWhitespace": false,
         "editor.wordWrap": "on",
-    },
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+        }
+    }
 }

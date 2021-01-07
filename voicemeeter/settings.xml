@@ -5,11 +5,11 @@
 	<ExternalFXsend send1ch1='0' send1ch2='0' send2ch1='0' send2ch2='0' />
 	<ExternalFXreturn ret1ch1='0' ret1ch2='0' ret2ch1='0' ret2ch2='0' />
 	<InputDev index='1' type='4' name="Focusrite USB (Focusrite USB Audio)" />
-	<InputDev index='2' type='8' name="VB-Audio CABLE-A" />
-	<InputDev index='3' type='8' name="VB-Audio CABLE-B" />
-	<InputDev index='4' type='8' name="VB-Audio CABLE-C" />
+	<InputDev index='2' name="-" />
+	<InputDev index='3' name="-" />
+	<InputDev index='4' type='4' name="CABLE-C Output (VB-Audio Cable C)" />
 	<InputDev index='5' name="-" />
-	<OutputDev index='1' type='4' name="Headphones (LE_WH-1000XM3 Stereo)" />
+	<OutputDev index='1' type='4' name="Headphones (WH-1000XM3 Stereo)" />
 	<OutputDev index='2' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='3' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
 	<OutputDev index='4' name="-" pOut1='0' pOut2='0' pOut3='0' pOut4='0' pOut5='0' pOut6='0' pOut7='0' pOut8='0'  />
@@ -32,7 +32,7 @@
 	<Strip index='2' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='0' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
 	<Strip index='2' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='2' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
-	<Strip index='3' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='0.00' dblimit='12.00' layer1='0.00' layer2='0.00' layer3='0.00' layer4='0.00' layer5='0.00' layer6='0.00' layer7='0.00' layer8='0.00' />
+	<Strip index='3' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='-30.00' dblimit='12.00' layer1='-30.00' layer2='-30.00' layer3='-30.00' layer4='-30.00' layer5='-30.00' layer6='-30.00' layer7='-30.00' layer8='-30.00' />
 	<Strip index='3' sendR='0.00' postR='0' sendD='0.00' postD='0' sendFx1='0.00' postFx1='0' sendFx2='0.00' postFx2='0' />
 	<Strip index='3' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' />
 	<Strip index='4' mute='0' solo='0' mono='0' muc='0' busa='1' busa2='0' busa3='0' busa4='0' busa5='0' busb='1' busb2='0' busb3='0' karaoke='0' dblevel='-30.00' dblimit='12.00' layer1='-30.00' layer2='-30.00' layer3='-30.00' layer4='-30.00' layer5='-30.00' layer6='-30.00' layer7='-30.00' layer8='-30.00' />
@@ -72,7 +72,7 @@
 <VoiceMeeterDelay>
 	<MultiTapGeneral mute='0' balance_left='-100.000000' balance_right='100.000000' dry='0.000000' wet='1.000000' autofit='0' phase='0' />	<MultiTapDelay predelay='0' timeratio='0.000000' currentBPM='0.000000' feedback='0.000000' feedbacktype='0' />	<MultiTapParam index='1' tapon='1' delay='0.500000' gain='100.000000' filtergain='10.000000' pan='0.000000' />	<MultiTapParam index='2' tapon='0' delay='1.000000' gain='95.000000' filtergain='15.000000' pan='0.000000' />	<MultiTapParam index='3' tapon='0' delay='1.500000' gain='90.000000' filtergain='20.000000' pan='0.000000' />	<MultiTapParam index='4' tapon='0' delay='2.000000' gain='85.000000' filtergain='25.000000' pan='0.000000' />	<MultiTapParam index='5' tapon='0' delay='2.500000' gain='80.000000' filtergain='30.000000' pan='0.000000' />	<MultiTapParam index='6' tapon='0' delay='3.000000' gain='75.000000' filtergain='35.000000' pan='0.000000' />	<MultiTapParam index='7' tapon='0' delay='3.500000' gain='70.000000' filtergain='40.000000' pan='0.000000' />	<MultiTapParam index='8' tapon='0' delay='4.000000' gain='65.000000' filtergain='45.000000' pan='0.000000' /></VoiceMeeterDelay>
 	</FXSection>
-	<LabelBus1>-10</LabelBus1>
+	<LabelBus1>headphones</LabelBus1>
 	<LabelBus2></LabelBus2>
 	<LabelBus3></LabelBus3>
 	<LabelBus4></LabelBus4>

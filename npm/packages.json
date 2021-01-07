@@ -1,11 +1,14 @@
 [
     "@bradgarropy/bnr",
+    "@bradgarropy/next-seo",
     "eslint",
+    "eslint-config",
     "gatsby-cli",
     "labman",
     "netlify-cli",
     "nodemon",
     "npm",
     "serve",
+    "test",
     "vsce"
 ]
