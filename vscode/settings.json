@@ -15,7 +15,7 @@
     "editor.formatOnSave": true,
     "editor.letterSpacing": 0.5,
     "editor.lineHeight": 25,
-    "editor.renameOnType": true,
+    "editor.linkedEditing": true,
     "editor.renderWhitespace": "none",
     "editor.snippetSuggestions": "top",
     "emmet.includeLanguages": {
