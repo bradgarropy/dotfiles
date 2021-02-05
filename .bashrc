@@ -2,14 +2,15 @@
 # aliases
 #############
 
-alias acp=git_add_commit_push
-alias rei=pip_reinstall
-alias remage=magento_restart
-alias ntlo="netlify open"
-alias ntld="netlify dev"
+alias gitacp=git_add_commit_push
+alias gitf="git fetch --prune"
 alias gho="gh repo view -w"
 alias ghpr="gh pr create -w"
 alias ghr=github_new_repo
+alias ntlo="netlify open"
+alias ntld="netlify dev"
+alias rei=pip_reinstall
+alias remage=magento_restart
 
 #############
 # functions
