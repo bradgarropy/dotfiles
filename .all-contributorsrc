@@ -1,0 +1,15 @@
+{
+    "projectName": "<repo>",
+    "projectOwner": "bradgarropy",
+    "repoType": "github",
+    "repoHost": "https://github.com",
+    "files": [
+        "readme.md",
+        "contributing.md"
+    ],
+    "imageSize": 100,
+    "contributorsPerLine": 7,
+    "contributorsSortAlphabetically": false,
+    "skipCi": false,
+    "contributors": []
+}
