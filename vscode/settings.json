@@ -36,7 +36,6 @@
     "files.exclude": {
         ".cache": true,
         ".vscode": true,
-        "node_modules": true,
         "*.egg-info": true,
         "**/*.pyc": true
     },
@@ -45,7 +44,7 @@
     "git.path": "D:\\Git\\bin\\git.exe",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.useAliasesForRenames": false,
-    "prettier.requireConfig": true,
+    "prettier.requireConfig": false,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
     "terminal.integrated.cursorBlinking": false,
@@ -57,7 +56,6 @@
     ],
     "typescript.format.enable": true,
     "typescript.validate.enable": true,
-    "window.zoomLevel": 1,
     "workbench.colorTheme": "Shades of Purple",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.settings.editor": "json",
@@ -74,5 +72,6 @@
             "comments": false,
             "strings": false
         }
-    }
+    },
+    "window.zoomLevel": 1
 }

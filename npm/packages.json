@@ -1,14 +1,24 @@
 [
+    "@adobe/magento-storefront-event-collector",
+    "@adobe/magento-storefront-events-sdk",
     "@bradgarropy/bnr",
+    "@bradgarropy/gatsby-link",
+    "@bradgarropy/hue-sdk",
     "@bradgarropy/next-seo",
-    "eslint",
+    "@bradgarropy/use-countdown",
+    "crh-hook",
     "eslint-config",
+    "floodgate-react-sdk",
     "gatsby-cli",
     "labman",
+    "mylib",
     "netlify-cli",
     "nodemon",
     "npm",
     "serve",
+    "test-cz-bg",
+    "test-hook",
     "test",
-    "vsce"
+    "vsce",
+    "yarn"
 ]

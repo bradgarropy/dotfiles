@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "scene - brb",
-    "current_scene": "scene - brb",
+    "current_program_scene": "component - audio",
+    "current_scene": "component - audio",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -58,6 +58,9 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
+            "name": "scene - countdown"
+        },
+        {
             "name": "scene - brb"
         },
         {
@@ -74,15 +77,6 @@
         },
         {
             "name": "scene - pairing"
-        },
-        {
-            "name": "scene - ama coding"
-        },
-        {
-            "name": "scene - ama sharing"
-        },
-        {
-            "name": "scene - ama talking"
         },
         {
             "name": "component - camera"
@@ -104,6 +98,27 @@
         },
         {
             "name": "component - audio"
+        },
+        {
+            "name": "component - brb"
+        },
+        {
+            "name": "component - coding"
+        },
+        {
+            "name": "component - interview"
+        },
+        {
+            "name": "component - pairing"
+        },
+        {
+            "name": "component - sharing"
+        },
+        {
+            "name": "component - talking"
+        },
+        {
+            "name": "component - countdown"
         }
     ],
     "sources": [
@@ -114,16 +129,49 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - talking",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1440,
+                "url": "https://bg-codes.netlify.app/talking",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.source - voicemeeter": [],
-                "libobs.show_scene_item.source - voicemeeter": []
+                "libobs.hide_scene_item.source - goxlr": [],
+                "libobs.show_scene_item.source - goxlr": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "component - audio",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -148,7 +196,7 @@
                         "group_item_backup": false,
                         "id": 8,
                         "locked": true,
-                        "name": "source - voicemeeter",
+                        "name": "source - goxlr",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -186,7 +234,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Image Mask/Blend",
-                    "prev_ver": 436273152,
+                    "prev_ver": 436273153,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -211,7 +259,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "component - rounded discord",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -262,52 +310,27 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - pairing",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/pairing.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.component - audio": [],
                 "libobs.hide_scene_item.component - camera": [],
                 "libobs.hide_scene_item.component - desktop": [],
+                "libobs.hide_scene_item.component - pairing": [],
                 "libobs.hide_scene_item.component - rounded discord": [],
                 "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - pairing": [],
                 "libobs.show_scene_item.component - audio": [],
                 "libobs.show_scene_item.component - camera": [],
                 "libobs.show_scene_item.component - desktop": [],
+                "libobs.show_scene_item.component - pairing": [],
                 "libobs.show_scene_item.component - rounded discord": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - pairing": []
+                "libobs.show_scene_item.component - twitch": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "scene - pairing",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -315,7 +338,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 10,
+                "id_counter": 12,
                 "items": [
                     {
                         "align": 5,
@@ -376,7 +399,7 @@
                         "visible": true
                     },
                     {
-                        "align": 5,
+                        "align": 10,
                         "bounds": {
                             "x": 1.0,
                             "y": 1.0
@@ -392,8 +415,8 @@
                         "locked": true,
                         "name": "component - camera",
                         "pos": {
-                            "x": 1760.0,
-                            "y": 940.0
+                            "x": 2560.0,
+                            "y": 1390.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -405,7 +428,7 @@
                         "visible": true
                     },
                     {
-                        "align": 5,
+                        "align": 10,
                         "bounds": {
                             "x": 1.0,
                             "y": 1.0
@@ -421,8 +444,8 @@
                         "locked": true,
                         "name": "component - rounded discord",
                         "pos": {
-                            "x": 1760.0,
-                            "y": 478.0
+                            "x": 2560.0,
+                            "y": 920.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -446,9 +469,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 12,
                         "locked": true,
-                        "name": "source - pairing",
+                        "name": "component - pairing",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -503,125 +526,25 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - sharing",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/sharing.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - talking",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/talking.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - coding",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/coding.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - brb",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/brb.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.component - audio": [],
                 "libobs.hide_scene_item.component - camera": [],
                 "libobs.hide_scene_item.component - discord": [],
+                "libobs.hide_scene_item.component - interview": [],
                 "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - interview": [],
                 "libobs.show_scene_item.component - audio": [],
                 "libobs.show_scene_item.component - camera": [],
                 "libobs.show_scene_item.component - discord": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - interview": []
+                "libobs.show_scene_item.component - interview": [],
+                "libobs.show_scene_item.component - twitch": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "scene - interview",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -629,7 +552,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 13,
+                "id_counter": 15,
                 "items": [
                     {
                         "align": 5,
@@ -673,9 +596,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 15,
                         "locked": true,
-                        "name": "source - interview",
+                        "name": "component - interview",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -690,7 +613,7 @@
                         "visible": true
                     },
                     {
-                        "align": 5,
+                        "align": 10,
                         "bounds": {
                             "x": 1.0,
                             "y": 1.0
@@ -706,20 +629,20 @@
                         "locked": true,
                         "name": "component - camera",
                         "pos": {
-                            "x": 190.0,
-                            "y": 397.0
+                            "x": 1271.0,
+                            "y": 991.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.42350000143051147,
-                            "y": 0.42350000143051147
+                            "x": 0.421875,
+                            "y": 0.421875
                         },
                         "scale_filter": "disable",
                         "visible": true
                     },
                     {
-                        "align": 5,
+                        "align": 9,
                         "bounds": {
                             "x": 1.0,
                             "y": 1.0
@@ -732,17 +655,17 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 12,
-                        "locked": true,
+                        "locked": false,
                         "name": "component - discord",
                         "pos": {
-                            "x": 1286.0,
-                            "y": 397.0
+                            "x": 1289.0,
+                            "y": 991.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.42350000143051147,
-                            "y": 0.42350000143051147
+                            "x": 0.421875,
+                            "y": 0.421875
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -789,37 +712,12 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - ama",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/ama.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
             "id": "window_capture",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "source - discord",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -827,7 +725,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "priority": 2,
-                "window": "Streaming - Discord:Chrome_WidgetWin_1:Discord.exe"
+                "window": "📺-streaming - Discord:Chrome_WidgetWin_1:Discord.exe"
             },
             "sync": 0,
             "versioned_id": "window_capture",
@@ -849,7 +747,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "component - discord",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -912,7 +810,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Image Mask/Blend",
-                    "prev_ver": 436273152,
+                    "prev_ver": 436273153,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -939,7 +837,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "component - rounded camera",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1000,7 +898,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "component - twitch",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1061,7 +959,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "component - desktop",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1122,7 +1020,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "component - camera",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1184,7 +1082,7 @@
             "monitoring_type": 0,
             "muted": true,
             "name": "source - sony a6000",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -1209,18 +1107,18 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.component - brb": [],
                 "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - brb": [],
                 "libobs.show_scene_item.component - audio": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - brb": []
+                "libobs.show_scene_item.component - brb": [],
+                "libobs.show_scene_item.component - twitch": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "scene - brb",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1228,7 +1126,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 10,
+                "id_counter": 12,
                 "items": [
                     {
                         "align": 5,
@@ -1272,9 +1170,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 8,
+                        "id": 12,
                         "locked": true,
-                        "name": "source - brb",
+                        "name": "component - brb",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1333,19 +1231,19 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.component - audio": [],
                 "libobs.hide_scene_item.component - camera": [],
+                "libobs.hide_scene_item.component - talking": [],
                 "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - talking": [],
                 "libobs.show_scene_item.component - audio": [],
                 "libobs.show_scene_item.component - camera": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - talking": []
+                "libobs.show_scene_item.component - talking": [],
+                "libobs.show_scene_item.component - twitch": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "scene - talking",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1353,7 +1251,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 27,
+                "id_counter": 30,
                 "items": [
                     {
                         "align": 5,
@@ -1397,9 +1295,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 26,
+                        "id": 30,
                         "locked": true,
-                        "name": "source - talking",
+                        "name": "component - talking",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1414,7 +1312,7 @@
                         "visible": true
                     },
                     {
-                        "align": 5,
+                        "align": 0,
                         "bounds": {
                             "x": 1.0,
                             "y": 1.0
@@ -1430,14 +1328,14 @@
                         "locked": true,
                         "name": "component - camera",
                         "pos": {
-                            "x": 398.85498046875,
-                            "y": 224.35498046875
+                            "x": 1280.0,
+                            "y": 720.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.68839454650878906,
-                            "y": 0.68839585781097412
+                            "x": 0.6875,
+                            "y": 0.6875
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1487,19 +1385,19 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.component - audio": [],
                 "libobs.hide_scene_item.component - desktop": [],
+                "libobs.hide_scene_item.component - sharing": [],
                 "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - sharing": [],
                 "libobs.show_scene_item.component - audio": [],
                 "libobs.show_scene_item.component - desktop": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - sharing": []
+                "libobs.show_scene_item.component - sharing": [],
+                "libobs.show_scene_item.component - twitch": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "scene - sharing",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1507,7 +1405,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 14,
                 "items": [
                     {
                         "align": 5,
@@ -1580,9 +1478,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 11,
+                        "id": 14,
                         "locked": true,
-                        "name": "source - sharing",
+                        "name": "component - sharing",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1640,22 +1538,22 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.component - coding": [],
                 "libobs.hide_scene_item.component - desktop": [],
                 "libobs.hide_scene_item.component - rounded camera": [],
                 "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - coding": [],
                 "libobs.show_scene_item.component - audio": [],
+                "libobs.show_scene_item.component - coding": [],
                 "libobs.show_scene_item.component - desktop": [],
                 "libobs.show_scene_item.component - rounded camera": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - coding": []
+                "libobs.show_scene_item.component - twitch": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
             "name": "scene - coding",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1663,7 +1561,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 43,
+                "id_counter": 46,
                 "items": [
                     {
                         "align": 5,
@@ -1726,6 +1624,35 @@
                     {
                         "align": 5,
                         "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 46,
+                        "locked": true,
+                        "name": "component - coding",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 10,
+                        "bounds": {
                             "x": 1.0,
                             "y": 1.0
                         },
@@ -1740,43 +1667,14 @@
                         "locked": true,
                         "name": "component - rounded camera",
                         "pos": {
-                            "x": 1760.0,
-                            "y": 940.0
+                            "x": 2560.0,
+                            "y": 1390.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
                             "x": 0.3125,
                             "y": 0.3125
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 40,
-                        "locked": true,
-                        "name": "source - coding",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1828,7 +1726,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "source - desktop",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1858,7 +1756,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "source - streamlabs",
-            "prev_ver": 436273152,
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1879,26 +1777,46 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "wasapi_input_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - goxlr",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "{0.0.1.00000000}.{b2b7edf7-7635-4161-94c4-3e1aa25ed010}"
+            },
+            "sync": 0,
+            "versioned_id": "wasapi_input_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.component - audio": [],
-                "libobs.hide_scene_item.component - desktop": [],
-                "libobs.hide_scene_item.component - rounded camera": [],
-                "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - ama": [],
-                "libobs.hide_scene_item.source - coding": [],
-                "libobs.show_scene_item.component - audio": [],
-                "libobs.show_scene_item.component - desktop": [],
-                "libobs.show_scene_item.component - rounded camera": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - ama": [],
-                "libobs.show_scene_item.source - coding": []
+                "libobs.hide_scene_item.source - brb": [],
+                "libobs.show_scene_item.source - brb": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "scene - ama coding",
-            "prev_ver": 436273152,
+            "name": "component - brb",
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1906,7 +1824,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 10,
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
@@ -1921,9 +1839,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 10,
+                        "id": 1,
                         "locked": true,
-                        "name": "component - audio",
+                        "name": "source - brb",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1936,7 +1854,39 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.source - coding": [],
+                "libobs.show_scene_item.source - coding": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "component - coding",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
                     {
                         "align": 5,
                         "bounds": {
@@ -1950,65 +1900,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "component - desktop",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 8,
-                        "locked": true,
-                        "name": "component - rounded camera",
-                        "pos": {
-                            "x": 1760.0,
-                            "y": 940.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.3125,
-                            "y": 0.3125
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
+                        "id": 1,
                         "locked": true,
                         "name": "source - coding",
                         "pos": {
@@ -2023,36 +1915,39 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "component - twitch",
-                        "pos": {
-                            "x": 1760.0,
-                            "y": 520.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.3125,
-                            "y": 0.3125
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.source - interview": [],
+                "libobs.show_scene_item.source - interview": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "component - interview",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
                     {
                         "align": 5,
                         "bounds": {
@@ -2066,9 +1961,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 6,
+                        "id": 1,
                         "locked": true,
-                        "name": "source - ama",
+                        "name": "source - interview",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -2096,23 +1991,15 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.component - audio": [],
-                "libobs.hide_scene_item.component - desktop": [],
-                "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - ama": [],
-                "libobs.hide_scene_item.source - sharing": [],
-                "libobs.show_scene_item.component - audio": [],
-                "libobs.show_scene_item.component - desktop": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - ama": [],
-                "libobs.show_scene_item.source - sharing": []
+                "libobs.hide_scene_item.source - pairing": [],
+                "libobs.show_scene_item.source - pairing": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "scene - ama sharing",
-            "prev_ver": 436273152,
+            "name": "component - pairing",
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2120,7 +2007,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 8,
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
@@ -2135,9 +2022,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 8,
+                        "id": 1,
                         "locked": true,
-                        "name": "component - audio",
+                        "name": "source - pairing",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -2150,7 +2037,39 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.source - sharing": [],
+                "libobs.show_scene_item.source - sharing": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "component - sharing",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
                     {
                         "align": 5,
                         "bounds": {
@@ -2164,36 +2083,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "component - desktop",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
+                        "id": 1,
                         "locked": true,
                         "name": "source - sharing",
                         "pos": {
@@ -2208,36 +2098,39 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "component - twitch",
-                        "pos": {
-                            "x": 1760.0,
-                            "y": 990.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.3125,
-                            "y": 0.3125
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.source - talking": [],
+                "libobs.show_scene_item.source - talking": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "component - talking",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
                     {
                         "align": 5,
                         "bounds": {
@@ -2251,9 +2144,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 5,
+                        "id": 1,
                         "locked": true,
-                        "name": "source - ama",
+                        "name": "source - talking",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -2280,24 +2173,181 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - brb",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1440,
+                "url": "http://bg-codes.netlify.app/brb",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - coding",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1440,
+                "url": "https://bg-codes.netlify.app/coding",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - interview",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1440,
+                "restart_when_active": false,
+                "url": "https://bg-codes.netlify.app/interview",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - pairing",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 1440,
+                "url": "https://bg-codes.netlify.app/pairing",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - sharing",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1440,
+                "url": "https://bg-codes.netlify.app/sharing",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.component - audio": [],
-                "libobs.hide_scene_item.component - camera": [],
-                "libobs.hide_scene_item.component - twitch": [],
-                "libobs.hide_scene_item.source - ama": [],
-                "libobs.hide_scene_item.source - talking": [],
-                "libobs.show_scene_item.component - audio": [],
-                "libobs.show_scene_item.component - camera": [],
-                "libobs.show_scene_item.component - twitch": [],
-                "libobs.show_scene_item.source - ama": [],
-                "libobs.show_scene_item.source - talking": []
+                "libobs.hide_scene_item.source - countdown": [],
+                "libobs.show_scene_item.source - countdown": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "scene - ama talking",
-            "prev_ver": 436273152,
+            "name": "component - countdown",
+            "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2305,7 +2355,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 8,
+                "id_counter": 2,
                 "items": [
                     {
                         "align": 5,
@@ -2320,7 +2370,106 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 8,
+                        "id": 2,
+                        "locked": true,
+                        "name": "source - countdown",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "source - countdown",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "",
+                "height": 1440,
+                "restart_when_active": true,
+                "url": "https://bg-codes.netlify.app/countdown",
+                "width": 2560
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.component - audio": [],
+                "libobs.hide_scene_item.component - countdown": [],
+                "libobs.hide_scene_item.component - twitch": [],
+                "libobs.show_scene_item.component - audio": [],
+                "libobs.show_scene_item.component - countdown": [],
+                "libobs.show_scene_item.component - twitch": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "scene - countdown",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 4,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
                         "locked": true,
                         "name": "component - audio",
                         "pos": {
@@ -2349,9 +2498,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 7,
+                        "id": 4,
                         "locked": true,
-                        "name": "source - talking",
+                        "name": "component - countdown",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -2380,35 +2529,6 @@
                         "group_item_backup": false,
                         "id": 3,
                         "locked": true,
-                        "name": "component - camera",
-                        "pos": {
-                            "x": 398.0,
-                            "y": 223.75
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.68906247615814209,
-                            "y": 0.6892361044883728
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
                         "name": "component - twitch",
                         "pos": {
                             "x": 1760.0,
@@ -2422,95 +2542,11 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "source - ama",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - interview",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "D:/pictures/obs/interview.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "wasapi_input_capture",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "source - voicemeeter",
-            "prev_ver": 436273152,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "{0.0.1.00000000}.{5e425c32-698f-4354-9730-b949e306d63d}"
-            },
-            "sync": 0,
-            "versioned_id": "wasapi_input_capture",
             "volume": 1.0
         }
     ],

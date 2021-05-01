@@ -49,7 +49,7 @@ strip[7].A1=1
 
 strip[0].B1=1
 strip[1].B1=0
-strip[2].B1=0
+strip[2].B1=1
 strip[3].B1=1
 strip[4].B1=0
 strip[5].B1=1
@@ -79,7 +79,7 @@ strip[7].A1=1
 
 strip[0].B1=1
 strip[1].B1=1
-strip[2].B1=0
+strip[2].B1=1
 strip[3].B1=1
 strip[4].B1=0
 strip[5].B1=1
@@ -109,7 +109,7 @@ strip[7].A1=1
 
 strip[0].B1=1
 strip[1].B1=0
-strip[2].B1=0
+strip[2].B1=1
 strip[3].B1=1
 strip[4].B1=0
 strip[5].B1=1
