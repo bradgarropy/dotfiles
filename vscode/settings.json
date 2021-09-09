@@ -1,77 +1,93 @@
 {
-    "breadcrumbs.enabled": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
-    "editor.cursorStyle": "line",
-    "editor.cursorBlinking": "solid",
-    "editor.cursorWidth": 3,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.fontFamily": "Cascadia Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.fontWeight": "400",
-    "editor.formatOnSave": true,
-    "editor.letterSpacing": 0.5,
-    "editor.lineHeight": 25,
-    "editor.linkedEditing": true,
-    "editor.renderWhitespace": "none",
-    "editor.snippetSuggestions": "top",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "typescript": "typescriptreact"
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "svelte"
-    ],
-    "explorer.confirmDelete": false,
-    "extensions.ignoreRecommendations": false,
-    "files.eol": "\n",
-    "files.exclude": {
-        ".cache": true,
-        ".vscode": true,
-        "*.egg-info": true,
-        "**/*.pyc": true
-    },
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "git.path": "D:\\Git\\bin\\git.exe",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.preferences.useAliasesForRenames": false,
-    "prettier.requireConfig": false,
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe",
-    "terminal.integrated.cursorBlinking": false,
-    "terminal.integrated.cursorStyle": "line",
-    "togglequotes.chars": [
-        "\"",
-        "'",
-        "`"
-    ],
-    "typescript.format.enable": true,
-    "typescript.validate.enable": true,
-    "workbench.colorTheme": "Shades of Purple",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.quickSuggestions": true,
-    "[handlebars]": {
-        "editor.formatOnSave": false
-    },
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false,
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": false,
-            "strings": false
-        }
-    },
-    "window.zoomLevel": 1
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorWidth": 3,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 25,
+  "editor.linkedEditing": true,
+  "editor.quickSuggestions": true,
+  "editor.renderWhitespace": "none",
+  "editor.snippetSuggestions": "top",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "svelte"
+  ],
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    ".cache": true,
+    ".vscode": true,
+    "*.egg-info": true,
+    "**/*.pyc": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.path": "D:\\Git\\bin\\git.exe",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.useAliasesForRenames": false,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.onsave": true,
+  "phpcs.executablePath": "C:\\Users\\bradg\\Desktop\\magento2\\vendor\\bin\\phpcs",
+  "phpcs.standard": "Magento2",
+  "prettier.requireConfig": false,
+  "terminal.external.windowsExec": "D:\\Git\\bin\\bash.exe",
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "GitBash",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.profiles.windows": {
+    "GitBash": {
+      "path": ["D:\\Git\\bin\\bash.exe"],
+      "icon": "terminal-bash"
+    }
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "togglequotes.chars": ["\"", "'", "`"],
+  "typescript.format.enable": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.validate.enable": true,
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Shades of Purple",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  }
 }
