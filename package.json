@@ -1,22 +1,24 @@
 {
-    "name": "<name>",
-    "version": "0.0.1",
-    "description": "<description>",
-    "keywords": [],
-    "homepage": "<url>",
-    "bugs": {
-        "url": "https://github.com/bradgarropy/<repo>/issues"
-    },
-    "license": "MIT",
     "author": {
         "name": "Brad Garropy",
         "email": "bradgarropy@gmail.com",
         "url": "https://bradgarropy.com"
     },
-    "main": "<path>",
     "bin": {
         "<name>": "<path>"
     },
+    "bugs": {
+        "url": "https://github.com/bradgarropy/<repo>/issues"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "description": "<description>",
+    "homepage": "<url>",
+    "keywords": [],
+    "license": "MIT",
+    "main": "<path>",
+    "name": "<name>",
+    "peerDependencies": {},
     "repository": {
         "type": "git",
         "url": "https://github.com/bradgarropy/<repo>"
@@ -24,7 +26,6 @@
     "scripts": {
         "start": ""
     },
-    "dependencies": {},
-    "devDependencies": {},
-    "peerDependencies": {}
+    "type": "module",
+    "version": "0.0.1"
 }
