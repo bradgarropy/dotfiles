@@ -5,15 +5,15 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
-        "jsx": "preserve",
-        "lib": ["dom", "dom.iterable", "esnext"],
-        "module": "esnext",
-        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
         "noEmit": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true,
-        "target": "es5"
+        "target": "ESNext"
     },
     "exclude": ["node_modules"],
     "include": ["**/*.ts", "**/*.tsx"]
