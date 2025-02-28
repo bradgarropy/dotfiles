@@ -1,9 +1,0 @@
-{
-    "settings": {
-        "bwtest": false,
-        "key": "g9hs-05xb-y3pv-bvwp",
-        "server": "rtmp://a.rtmp.youtube.com/live2",
-        "service": "YouTube / YouTube Gaming"
-    },
-    "type": "rtmp_common"
-}
