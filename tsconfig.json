@@ -3,6 +3,7 @@
         "allowJs": true,
         "baseUrl": "src",
         "esModuleInterop": true,
+        "erasableSyntaxOnly": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
         "jsx": "react-jsx",
