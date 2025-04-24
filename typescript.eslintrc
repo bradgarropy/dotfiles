@@ -1,6 +1,0 @@
-{
-    "extends": [
-        "@bradgarropy/eslint-config",
-        "@bradgarropy/eslint-config-typescript"
-    ]
-}
